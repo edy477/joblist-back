@@ -10,14 +10,14 @@
 
 ##  Characteristics
 
-- Language: Ruby 2.7.2+
-- Framework: Rails 6.0.3+
+- Language: Ruby 2.7+
+- Framework: Rails 6+
 - Webserver: Puma
 - Test Framework: RSpec
 - Databases: Postgres & Redis
 - Async Processor: Sidekiq
-- Serializer: Jbuilder
-- Authentication: devise
+- Serializer: Jbuilder 
+- Authentication: devise & devise token
 - Admin: Active Admin
 
 
@@ -54,3 +54,21 @@ run test wit `rspec`
 ## License
 
 MIT
+
+##Usage
+for SignIn
+
+{
+"user": {
+"email": "user@user.com",
+"password": "dtLy9Hh9rhEQg8j"
+},
+"format": "json"
+}
+
+for auth routes ie creating a new job
+add auth headers
+- content-type: application/json
+- access-token:  "add tokens returned from the singin request"
+- client: "add client returned from the singin request"
+- uid: "add uid returned from the singin request"
