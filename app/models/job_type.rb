@@ -7,7 +7,7 @@
 #
 class JobType < ApplicationRecord
   has_many :jobs
-  validate :job_type, presence:true, uniquenes:true
+  validates :job_type, presence:true
 
   #scope :job_type ->(jobtype) { where(job: Job.where(username: username)) }
 
