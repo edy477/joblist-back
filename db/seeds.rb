@@ -9,6 +9,8 @@ unless AdminUser.count.positive?
                     password_confirmation: 'password')
 end
 
+User.create(email: "user@user.com", passwod: "dtLy9Hh9rhEQg8j") # or create from admin backoffice
+
 JobType.create(job_type: "contract")
 JobType.create(job_type: "fulltime")
 
