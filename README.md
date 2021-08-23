@@ -55,7 +55,7 @@ run test wit `rspec`
 
 MIT
 
-##Usage
+## Usage
 for SignIn
 
 {
