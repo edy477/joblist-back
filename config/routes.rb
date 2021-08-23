@@ -10,8 +10,8 @@ Rails.application.routes.draw do
     registrations: 'api/v1/registrations',
     sessions: 'api/v1/sessions',
     passwords: 'api/v1/passwords',
-    jobs:'api/v1/jobs',
-    companies:'api/v1/companies',
+
+
     token_validations: 'api/v1/token_validations'
   }, skip: %i[omniauth_callbacks registrations]
 
