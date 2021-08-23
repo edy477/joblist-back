@@ -11,4 +11,5 @@
 #  user_account_id           :bigint
 #
 class EducationDetail < ApplicationRecord
+  validates :user_account_id, presence:true
 end
