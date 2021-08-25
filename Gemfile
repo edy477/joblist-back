@@ -23,21 +23,18 @@ gem 'sidekiq', '~> 6.2.1'
 # Nullify blank strings before saving to db
 gem 'nilify_blanks', '~> 1.4'
 
-
-
 # Backoffice
-gem 'arctic_admin', '~> 3.2'
 gem 'activeadmin', '~> 2.8.1'
 gem 'activeadmin_addons', '~> 1.8.3'
 gem 'active_admin_theme', '~> 1.1'
+gem 'arctic_admin', '~> 3.2'
 gem 'chartkick', '~> 4.0.5'
+gem 'draper'
 gem 'groupdate', '~> 5.2.2'
 gem 'ransack', '~> 2.4.2'
-gem 'draper'
 # Authentication
 gem 'devise', '~> 4.8.0'
 gem 'devise_token_auth', '~> 1.2.0'
-
 
 # Serializing json views
 gem 'jb', '~> 0.8.0'
@@ -51,7 +48,6 @@ gem 'sentry-ruby'
 gem 'sentry-sidekiq'
 
 group :development, :test do
-
   gem 'bullet', '~> 6.1.5'
   gem 'byebug', '>= 11.0.1', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails', '~> 6.2.0'
@@ -60,9 +56,9 @@ group :development, :test do
 end
 
 group :development do
-  gem "better_errors"
-  gem "binding_of_caller"
   gem 'annotate', '~> 3.1.1'
+  gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'letter_opener', '~> 1.7.0'
   gem 'listen', '>= 3.0.5', '< 3.7'
   gem 'reek', '~> 6.0.6', require: false

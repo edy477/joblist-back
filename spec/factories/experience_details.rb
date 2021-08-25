@@ -19,6 +19,5 @@
 #
 FactoryBot.define do
   factory :experience_detail do
-    
   end
 end

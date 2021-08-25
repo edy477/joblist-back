@@ -11,6 +11,4 @@
 #
 class JobLocation < ApplicationRecord
   has_many :jobs
-
-
 end

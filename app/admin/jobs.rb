@@ -9,7 +9,6 @@ ActiveAdmin.register Job do
     column :job_location_id
     column :company_id
     actions
-
   end
   filter :job_type_id
   filter :job_location_id
@@ -25,11 +24,9 @@ ActiveAdmin.register Job do
             row :company_id
           end
         end
-
-
-        end
       end
     end
+  end
   form do |f|
     f.inputs do
       if f.object.new_record?
@@ -38,9 +35,9 @@ ActiveAdmin.register Job do
         f.input :company_id
         f.input :job_location_id
 
-    end
+      end
 
-    actions
-  end
+      actions
     end
+  end
 end

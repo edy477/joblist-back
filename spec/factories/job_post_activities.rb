@@ -13,6 +13,5 @@
 #
 FactoryBot.define do
   factory :job_post_activity do
-    
   end
 end

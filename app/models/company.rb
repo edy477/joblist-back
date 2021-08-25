@@ -9,10 +9,8 @@
 #
 class Company < ApplicationRecord
   has_many :jobs
-  validates :company_name, uniqueness: true, presence:true
-  validates :company_website,  uniqueness:true, presence:true
+  validates :company_name, uniqueness: true, presence: true
+  validates :company_website,  uniqueness: true, presence: true
 
-  scope :with_company_id, lambda {|id| joins(:job).where('jobs.company_id = ?', id) }
-
-
+  scope :with_company_id, ->(id) { joins(:job).where('jobs.company_id = ?', id) }
 end

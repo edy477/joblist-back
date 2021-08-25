@@ -22,12 +22,7 @@ class Job < ApplicationRecord
   belongs_to :job_type
   belongs_to :company
   belongs_to :job_location
-  #has_many :job_post_activities, as: :subject
+  # has_many :job_post_activities, as: :subject
   has_many :job_post_activities, dependent: :destroy
-  validates :job_description, :job_type_id, :company_id, presence:true
-
-
-
-
-
+  validates :job_description, :job_type_id, :company_id, presence: true
 end

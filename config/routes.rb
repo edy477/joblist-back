@@ -11,7 +11,6 @@ Rails.application.routes.draw do
     sessions: 'api/v1/sessions',
     passwords: 'api/v1/passwords',
 
-
     token_validations: 'api/v1/token_validations'
   }, skip: %i[omniauth_callbacks registrations]
 
@@ -44,7 +43,6 @@ Rails.application.routes.draw do
       resources :job_locations
 
       resources :job_post_activities
-
     end
   end
 end

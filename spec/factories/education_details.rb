@@ -12,6 +12,5 @@
 #
 FactoryBot.define do
   factory :education_detail do
-    
   end
 end

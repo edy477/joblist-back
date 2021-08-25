@@ -18,6 +18,4 @@
 #  experience_details_fk  (user_account_id => profiles.user_account_id)
 #
 class ExperienceDetail < ApplicationRecord
-
-
 end

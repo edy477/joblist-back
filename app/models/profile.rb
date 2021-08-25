@@ -14,5 +14,4 @@
 #  profiles_fk  (user_account_id => users.id)
 #
 class Profile < ApplicationRecord
-
 end

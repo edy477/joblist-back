@@ -11,5 +11,4 @@
 #  user_logs_fk  (user_account_id => users.id)
 #
 class UserLog < ApplicationRecord
-
 end

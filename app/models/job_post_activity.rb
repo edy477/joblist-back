@@ -12,6 +12,5 @@
 #  job_post_activities_fk  (user_id => users.id)
 #
 class JobPostActivity < ApplicationRecord
-  belongs_to :subject, polymorphic: true, optional:true
-
+  belongs_to :subject, polymorphic: true, optional: true
 end
